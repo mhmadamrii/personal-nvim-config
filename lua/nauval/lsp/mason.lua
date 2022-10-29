@@ -30,20 +30,20 @@ mason_lspconfig.setup_handlers({
 	-- This is a default handler that will be called for each installed server (also for new servers that are installed during a session)
 	function(server_name)
 		local opts = {
-			on_attach = require("kevin.lsp.handlers").on_attach,
-			capabilities = require("kevin.lsp.handlers").capabilities,
+			on_attach = require("nauval.lsp.handlers").on_attach,
+			capabilities = require("nauval.lsp.handlers").capabilities,
 		}
 
 		if server_name == "emmet_ls" then
-			local emmetls_opts = require("kevin.lsp.settings.emmetls")
+			local emmetls_opts = require("nauval.lsp.settings.emmetls")
 			opts = vim.tbl_deep_extend("force", emmetls_opts, opts)
 		end
 		if server_name == "jsonls" then
-			local jsonls_opts = require("kevin.lsp.settings.jsonls")
+			local jsonls_opts = require("nauval.lsp.settings.jsonls")
 			opts = vim.tbl_deep_extend("force", jsonls_opts, opts)
 		end
 		if server_name == "sumneko_lua" then
-			local sumneko_opts = require("kevin.lsp.settings.sumneko_lua")
+			local sumneko_opts = require("nauval.lsp.settings.sumneko_lua")
 			opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
 		end
 

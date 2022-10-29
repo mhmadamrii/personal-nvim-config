@@ -72,7 +72,9 @@ return packer.startup(function(use)
 			})
 		end,
 	})
-	use("wakatime/vim-wakatime") -- WakaTime
+
+  -- multi cursor
+  use('mg979/vim-visual-multi')
 
 	-- Color Scheme
 	use("folke/tokyonight.nvim")
