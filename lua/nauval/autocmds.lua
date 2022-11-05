@@ -21,4 +21,8 @@ vim.cmd([[
     autocmd!
     autocmd VimResized * tabdo wincmd = 
   augroup end
+  augroup _term
+    autocmd!
+    autocmd TermOpen * setlocal nonumber norelativenumber
+  augroup end
 ]])

@@ -1,4 +1,3 @@
-
 local status_ok, project = pcall(require, "project_nvim")
 if not status_ok then
 	return
@@ -13,7 +12,7 @@ project.setup({
 	---@usage set to true to disable setting the current-woriking directory
 	--- Manual mode doesn't automatically change your root directory, so you have
 	--- the option to manually do so using `:ProjectRoot` command.
-	manual_mode = false,
+	manual_mode = true,
 
 	---@usage Methods of detecting the root directory
 	--- Allowed values: **"lsp"** uses the native neovim lsp
@@ -38,7 +37,7 @@ project.setup({
 
 	---@type string
 	---@usage path to store the project history for use in telescope
-  datapath = vim.fn.stdpath("data"),
+	datapath = vim.fn.stdpath("data"),
 })
 
 local tele_status_ok, telescope = pcall(require, "telescope")
@@ -46,4 +45,4 @@ if not tele_status_ok then
 	return
 end
 
-telescope.load_extension('projects')
+telescope.load_extension("projects")
