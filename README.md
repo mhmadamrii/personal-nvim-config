@@ -2,8 +2,13 @@
 
 my nvim config file. stolen from https://github.com/KevinPalowa/nvim
 
-tmux config: https://gist.github.com/nauvalazhar/e27b955adef16c96924ca15fa2fcc54d
+## Setup
+- Font: [JetBrainsMono NF](https://www.nerdfonts.com/font-downloads)
+- Terminal: [Alacritty](https://github.com/alacritty/alacritty)
+- Shell: [ZSH](https://ohmyz.sh/)
+- Config: https://gist.github.com/nauvalazhar/cc93db74e11f1cd3d400aba6aeaf7108
 
-sneak peek
 
-<img width="1680" alt="image" src="https://user-images.githubusercontent.com/14899175/198817444-9fc78093-10a4-4653-a5b5-3e6951bb1342.png">
+## Sneak Peek
+
+<img width="1680" alt="image" src="https://user-images.githubusercontent.com/14899175/201462335-5c7a2140-9891-4bf7-adc2-e851ca2cd6da.png">
