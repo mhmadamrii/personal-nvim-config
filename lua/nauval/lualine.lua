@@ -2,11 +2,11 @@
 local colors = {
   blue   = '#80a0ff',
   cyan   = '#79dac8',
-  black  = '#24283b',
+  black  = '#1a1b26',
   white  = '#ffffff',
   red    = '#ff5189',
   violet = '#d183e8',
-  grey   = '#32374c',
+  grey   = '#24283b',
   insert = '#00FFAB',
   visual = '#FFCA03',
   replace = '#FF008E',

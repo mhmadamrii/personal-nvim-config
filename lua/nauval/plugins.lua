@@ -154,6 +154,12 @@ return packer.startup(function(use)
 			})
 		end,
 	})
+	use({
+		"petertriho/nvim-scrollbar",
+		config = function()
+			require("scrollbar").setup()
+		end,
+	})
 
 	use("ahmedkhalf/project.nvim")
 	-- Automatically set up your configuration after cloning packer.nvim

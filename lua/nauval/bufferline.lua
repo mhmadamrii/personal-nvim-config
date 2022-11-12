@@ -10,7 +10,9 @@ bufferline.setup({
 		right_mouse_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
 		left_mouse_command = "buffer %d", -- can be a string | function, see "Mouse actions"
 		middle_mouse_command = nil, -- can be a string | function, see "Mouse actions"
-		indicator_style = "│",
+		indicator = {
+			style = "none",
+		},
 		buffer_close_icon = "",
 		modified_icon = "●",
 		close_icon = "",
@@ -21,10 +23,17 @@ bufferline.setup({
 		tab_size = 21,
 		diagnostics = false, -- | "nvim_lsp" | "coc",
 		diagnostics_update_in_insert = false,
-		offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
+		offsets = {
+			{
+				filetype = "NvimTree",
+				text = "  File Explorer",
+				padding = 0,
+				separator = true,
+			},
+		},
 		show_buffer_icons = true,
 		show_buffer_close_icons = true,
-		show_close_icon = true,
+		show_close_icon = false,
 		show_tab_indicators = true,
 		persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
 		separator_style = "thin", -- | "thick" | "thin" | { 'any', 'any' },
@@ -32,22 +41,55 @@ bufferline.setup({
 		always_show_bufferline = true,
 	},
 	highlights = {
+		buffer_selected = {
+			bg = "#24283b",
+		},
+		close_button_selected = {
+			bg = "#24283b",
+		},
+		close_button = {
+			bg = {
+				attribute = "bg",
+				highlight = "Normal",
+			},
+		},
+		background = {
+			bg = {
+				attribute = "bg",
+				highlight = "Normal",
+			},
+		},
+		fill = {
+			bg = {
+				attribute = "bg",
+				highlight = "Normal",
+			},
+		},
 		separator = {
-			fg = "#1f2335",
+			bg = {
+				attribute = "bg",
+				highlight = "Normal",
+			},
+			fg = {
+				attribute = "bg",
+				highlight = "Normal",
+			},
 		},
 		separator_selected = {
-			fg = "#24283b",
+			bg = {
+				attribute = "bg",
+				highlight = "Normal",
+			},
+			fg = {
+				attribute = "bg",
+				highlight = "Normal",
+			},
 		},
-		buffer_selected = {
-			fg = "fg",
-      bg = "#24283b",
-			bold = true,
-		},
-    background = {
-      bg = "#1f2335",
-    },
-		fill = {
-			bg = "#1f2335",
+		offset_separator = {
+			bg = {
+				attribute = "bg",
+				highlight = "Normal",
+			},
 		},
 	},
 })

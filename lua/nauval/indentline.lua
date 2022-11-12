@@ -56,6 +56,8 @@ vim.wo.colorcolumn = "99999"
 -- vim.opt.listchars:append "space:⋅"
 -- vim.opt.listchars:append "space:"
 -- vim.opt.listchars:append "eol:↴"
+vim.cmd([[highlight IndentBlanklineChar guifg=#292929]])
+vim.cmd([[highlight IndentBlanklineContextChar guifg=#494949]])
 
 indent_blankline.setup({
 	-- show_end_of_line = true,
