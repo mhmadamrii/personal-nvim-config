@@ -12,3 +12,7 @@ my nvim config file. stolen from https://github.com/KevinPalowa/nvim
 ## Sneak Peek
 
 <img width="1680" alt="image" src="https://user-images.githubusercontent.com/14899175/201462335-5c7a2140-9891-4bf7-adc2-e851ca2cd6da.png">
+
+## Neofetch
+
+<img width="664" alt="image" src="https://user-images.githubusercontent.com/14899175/201640239-38def860-9eaf-4c7c-a597-5ceb3a71fc8e.png">
