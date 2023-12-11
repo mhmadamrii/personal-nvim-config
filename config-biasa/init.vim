@@ -12,6 +12,21 @@ call plug#begin()
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }
+Plug 'preservim/nerdtree'
 call plug#end()
-
 :colorscheme jellybeans
+
+
+" Map <leader>n to open NERDTree
+nnoremap <leader>n :NERDTreeFocus<CR>
+
+" Map <C-n> to toggle NERDTree
+nnoremap <C-b> :NERDTreeToggle<CR>
+
+" Map space + e to open Telescope
+nnoremap <space>e :Telescope find_files<CR>
+
+" Start NERDTree. If a file is specified, move the cursor to its window.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+
