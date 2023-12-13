@@ -13,6 +13,7 @@ Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }
 Plug 'preservim/nerdtree'
+Plug 'lewis6991/gitsigns.nvim'
 call plug#end()
 :colorscheme jellybeans
 
@@ -29,4 +30,8 @@ nnoremap <space>e :Telescope find_files<CR>
 " Start NERDTree. If a file is specified, move the cursor to its window.
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+
+" Enable gitsigns.nvim
+lua require('gitsigns').setup()
+
 
